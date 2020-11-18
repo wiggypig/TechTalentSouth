@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-11-18T20:43:33.282Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="iModjATk3XlIohfYXNq1" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-18T20:51:40.117Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="zc6FUBJV51k3HvGp9wQm" version="13.10.0" type="github">
   <diagram name="Page-1" id="12e1b939-464a-85fe-373e-61e167be1490">
-    <mxGraphModel dx="1564" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1043" dy="583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -85,16 +85,16 @@
         <mxCell id="RFGKpwUfl4xb3_GYFBP2-12" value="Inventory Reports" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="660" y="732" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="RFGKpwUfl4xb3_GYFBP2-13" value="As a user, I want be able to see products listed by purchase price for planning product replacement." style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="464" y="635" width="120" height="75" as="geometry" />
+        <mxCell id="RFGKpwUfl4xb3_GYFBP2-13" value="As a user, I want to be able to see products listed by purchase price for planning product replacement." style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="464" y="630" width="120" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="RFGKpwUfl4xb3_GYFBP2-14" value="As a user, I want to start typing in the search bar and begin to see items." style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="464" y="725" width="120" height="60" as="geometry" />
+        <mxCell id="RFGKpwUfl4xb3_GYFBP2-14" value="&lt;span id=&quot;docs-internal-guid-041d4bdb-7fff-3712-cf92-d592fafdc148&quot;&gt;&lt;span style=&quot;font-size: 9pt ; font-family: &amp;#34;arial&amp;#34; ; vertical-align: baseline&quot;&gt;As a user, I want to start typing in the search bar and begin to see items already stored in the database.&lt;/span&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="464" y="725" width="116" height="95" as="geometry" />
         </mxCell>
         <mxCell id="RFGKpwUfl4xb3_GYFBP2-15" value="&lt;span&gt;Duplicate Item check&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="660" y="650" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="RFGKpwUfl4xb3_GYFBP2-16" value="As a user, I want be able to enter product warranty information and get notified by email one month prior to warranty expiration for planning product replacement." style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="RFGKpwUfl4xb3_GYFBP2-16" value="As a user, I want to be able to enter product warranty information and get notified by email one month prior to warranty expiration for planning product replacement." style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="330" y="665" width="124" height="120" as="geometry" />
         </mxCell>
         <mxCell id="RFGKpwUfl4xb3_GYFBP2-18" value="&lt;font style=&quot;font-size: 30px&quot;&gt;Home Inventory Management Site&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CCE5FF;gradientColor=#ffffff;gradientDirection=north;" vertex="1" parent="1">
