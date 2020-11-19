@@ -1,0 +1,47 @@
+Week 1 Day 2 
+
+commands to complete the lab assignemnt.
+cd ~
+ls
+mkdir LionKing
+cd LionKing
+mkdir goodLion badLion
+ls
+cd goodLion
+echo $null >> simba.html
+echo "" > mufasa.html scar.jpg | copy null > Mufasa.html scar.jpg
+
+pwd
+mv scar.jpg ../badLion
+rm *.html
+cd ../..
+rm -r LionKing
+****
+1. Introduction to Git Commits 
+
+2. Branching in Git 
+	git branch bugfix
+	git checkout bugfix
+
+3. Merging in Git 
+	git branch bugfix
+	git checkout bugfix
+	git commit
+	git checkout master
+	git commit
+	git merge bugfix
+	
+
+4. Rebase Introduction
+	git checkout -b bugfix 
+	git commit
+	git checkout master
+	git commit
+	git checkout bugfix
+	git rebase master
+	
+	
+
+git checkout newImage; git commit
+git switch
+
