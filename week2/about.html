@@ -1,35 +1,119 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title> About </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../week2/assets/stylesheets/standard.css" type="text/css">
         <link rel="stylesheet" href="../week2/assets/stylesheets/normalize.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Tangerine|Source+Sans+Pro&display=swap" rel="stylesheet">
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+         <!-- Animate.css framework CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <!-- use local css -->
+        <link rel="stylesheet" type="text/css" href="main.css">
+
+        <style>
+            .middleH2 {
+                font-family: 'Tangerine', cursive; font-size:48px; text-shadow: 4px 4px 4px #aaa; text-align: center;
+            }
+        </style>
     </head>
 <body>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">Navbar</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
 
+<!-- Bootstrap Navbar -->
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="hm2w2d3.html">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Inventory Tracking</a>
+        <a class="dropdown-item" href="#">Item Management</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Settings</a>
+        <a class="dropdown-item" href="contact.html">Contact</a>
+        <a class="dropdown-item" href="about.html">About</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Reports</a>
+    </li>
+  </ul>
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</div>
+</nav>
 <h2>Our Mission</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Facilisi cras fermentum odio eu feugiat pretium. Diam donec adipiscing tristique risus nec feugiat in fermentum. Vulputate ut pharetra sit amet aliquam id diam maecenas. A diam sollicitudin tempor id eu nisl nunc mi ipsum. Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc. Sed velit dignissim sodales ut eu sem integer vitae. Commodo odio aenean sed adipiscing diam. Vel fringilla est ullamcorper eget nulla facilisi etiam. Nec tincidunt praesent semper feugiat nibh sed pulvinar. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros in. Mi ipsum faucibus vitae aliquet nec ullamcorper sit. Tristique senectus et netus et malesuada. Proin libero nunc consequat interdum varius sit amet. Habitasse platea dictumst quisque sagittis purus sit amet.</p>
 <h2>
-    <div style="Font-family: 'Tangerine', serif;" font-size:48px; text-shadow: 4px 4px 4px #aaa;> 
+    <div class="middleH2"> 
         We Endeavor To Be
-    </style> </div>
+    </div>
     
 </h2>
     
-         
-<ul>
-  <li>Trustworthy</li>
-  <li>Helpful</li>
-  <li>Friendly</li>
-  <li>Courteous</li>
-  <li>Thrifty</li>
-  <li>Brave</li>
-  <li>Clean</li>
-  <li>Reverent</li>
-</ul>  <h4>Passion Projects</h4>
+<!-- Classes managing images using Bootstrap -->
+<div class="container features">
+    <div class="row">
+        <div class="col-xs-12 col-sm-4">
+    	    	
+    	</div>
+    	<div class="col-xs-12 col-sm-4">
+    	    <ul>
+                <li>Trustworthy</li>
+                <li>Helpful</li>
+                <li>Friendly</li>
+                <li>Courteous</li>
+                <li>Thrifty</li>
+                <li>Brave</li>
+                <li>Clean</li>
+                <li>Reverent</li>
+              </ul>
+    	</div>
+    	<div class="col-xs-12 col-sm-4">
+    	    
+    	</div>
+    </div>
+</div> 
+
+
+
+<h4>Passion Projects</h4>
 <p>Velit laoreet id donec ultrices tincidunt arcu. Turpis massa sed elementum tempus egestas. Placerat duis ultricies lacus sed turpis tincidunt id. Nunc consequat interdum varius sit amet mattis vulputate enim. Amet consectetur adipiscing elit ut aliquam purus sit. Mauris sit amet massa vitae tortor. Nullam eget felis eget nunc lobortis mattis aliquam faucibus. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Dignissim enim sit amet venenatis. Condimentum id venenatis a condimentum. Eget nulla facilisi etiam dignissim diam quis. Molestie nunc non blandit massa enim nec dui nunc mattis.</p>
 
-
+<!-- Footer using BootStrap  -->
+<footer class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">© Good Inventory Tracker Co. 2020 </div>
+      <div class="col-md-4">
+        <ul class="nav nav-pills">
+          <li><a href="contact.html">Contact Us &#124; </a></li>
+          <li><a href="https://www.google.com">Get Support &#124; </a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <p class="text-right"><a href="#">Follow Us</a></p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
