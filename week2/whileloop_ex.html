@@ -1,0 +1,43 @@
+<html>
+<head>
+
+    
+   <title> While Loop </title> 
+</head>
+
+<body>
+    <script>
+        let bottle, leftbottle;
+        let songPhrase, verse2, songClose;
+        bottle  = 99;
+        songPhrase = "We take one down and pass it around. Now there are only";
+        verse2 = "of root beer on the wall";
+        songClose = "There is no more and my song in done! I got to go to the bathroom NOW!";
+
+
+        
+        console.log("There are " , bottle, "bottles of root beer on the wall!");
+
+        for (let i = 1; i <= bottle; i = i + 1){
+            leftbottle = bottle - i;
+            console.log(i, leftbottle);
+            console.log(songPhrase, leftbottle, verse2);
+        }
+        console.log(songClose);
+        <!-- While Loop -->
+        let i = 1;
+        while (i <= bottle)
+        {
+            console.log(i);
+            i = i + 1;
+        }
+
+        console.log("Happy Thanksgiving!");
+
+
+    </script>
+
+  
+   <p>Show Me 1</p>
+</body>
+</html>

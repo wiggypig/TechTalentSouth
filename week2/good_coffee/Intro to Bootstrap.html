@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)https://techtalentsouth.slides.com/techtalentsouth/intro-to-bootstrap-dcd5e3?token=vobD-dO7#/18 -->
+<html class="sl-root decks show mz-history mz-svg mz-localstorage mz-csspositionsticky mz-supports mz-cssanimations mz-backgroundsize mz-no-cssgridlegacy mz-cssgrid mz-flexbox mz-csstransforms mz-csstransforms3d mz-csstransitions mz-fullscreen mz-webpanimation loaded ua-windows ua-chrome has-visible-scrollbars fonts-are-ready reveal-is-ready" data-account=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <title>Intro to Bootstrap</title>
+    <meta name="description" content="A presentation created with Slides.">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta property="og:title" content="Intro to Bootstrap">
+    <meta property="og:description" content="A presentation created with Slides.">
+    <meta property="og:site_name" content="Slides">
+    <meta property="og:image" content="https://media.slid.es/thumbnails/792922619164c554f9e96ea6e616ffa7/thumb.jpg?1605886652">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://techtalentsouth.slides.com/techtalentsouth/intro-to-bootstrap-dcd5e3?token=vobD-dO7">
+    <meta property="fb:app_id" content="146002942236376">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="manifest" href="https://techtalentsouth.slides.com/manifest.json">
+
+    <link href="./Intro to Bootstrap_files/css2" rel="stylesheet" type="text/css" data-application-font="inter">
+
+    <link rel="stylesheet" media="all" href="./Intro to Bootstrap_files/slides-5463dbbad1a68c6e9a85872698fd43e74078271bfd42f08aadf3e7324137e99c.css">
+    <link rel="stylesheet" media="all" href="./Intro to Bootstrap_files/application-a73a4d870e294376475af590f733872f07dae906f77f69c7dc7fa2df1f713240.css">
+    	<link rel="stylesheet" media="all" href="./Intro to Bootstrap_files/deck-v2-decc9fc7e7d11e7781743b9cbd47c0d6b223b3ba2ee96c784d0f1355d5e8b1d5.css">
+
+<style id="global-css-output" type="text/css"></style>
+
+<style id="theme-css-output" type="text/css">.reveal {
+  background-color: #f2f4f4;
+}
+.reveal .slides a {
+  color: #f79027;
+}
+.reveal .slides {
+  font-family: 'Lato';
+  background-image: url('https://s3.amazonaws.com/media-p.slid.es/uploads/264630/images/6249095/slide.png');
+}
+</style>
+
+<style id="user-css-output" type="text/css"></style>
+
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="PvTNV+9yZp3UrP7+7vL+Hzit4I6AUyoJQZ312oGIBhCeMfoSQejICohUK4uiU3og/6BLIFgjY5TE7ir4jcMOuA==">
+    <script type="application/javascript" async="" defer="" src="./Intro to Bootstrap_files/track.js.download"></script><script type="text/javascript" async="" src="./Intro to Bootstrap_files/f7sH7NavrjjvuGxByaw.js.download"></script><script type="text/javascript">
+  if( navigator.doNotTrack !== '1' && !/dnt=1/.test( window.location.search ) ) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-39670045-1', 'auto');
+    ga('send', 'pageview');
+
+  }
+</script>
+    	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@Slides">
+	<meta name="twitter:title" content="Intro to Bootstrap">
+	<meta name="twitter:description" content="A presentation created with Slides.">
+	<meta name="twitter:image" content="https://media.slid.es/thumbnails/792922619164c554f9e96ea6e616ffa7/thumb.jpg?1605886652">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <style type="text/css"></style><link rel="stylesheet" href="./Intro to Bootstrap_files/opensans.css"><link rel="stylesheet" href="./Intro to Bootstrap_files/css"><style type="text/css" media="screen">.uv-icon{box-sizing:border-box;display:inline-block;cursor:pointer;position:relative;transition:all 300ms;width:39px;height:39px;position:fixed;z-index:100002;opacity:0.8;transition:opacity 100ms}.uv-icon.uv-bottom-right{bottom:10px;right:12px}.uv-icon.uv-top-right{top:10px;right:12px}.uv-icon.uv-bottom-left{bottom:10px;left:12px}.uv-icon.uv-top-left{top:10px;left:12px}.uv-icon.uv-is-selected{opacity:1}.uv-icon svg{width:39px;height:39px}.uv-icon .uv-tooltip-container{position:relative}.uv-icon .uv-tooltip-container .uv-icon-tooltip{display:none;position:absolute;height:20px;padding:4px 8px;background-color:#464653;color:white;font-size:12px;border-radius:4px;line-height:18px;font-family:"Open Sans", sans-serif;white-space:nowrap}.uv-icon .uv-tooltip-container .uv-icon-tooltip.left,.uv-icon .uv-tooltip-container .uv-icon-tooltip.right{top:0;bottom:0;margin:auto 10px}.uv-icon .uv-tooltip-container .uv-icon-tooltip.top,.uv-icon .uv-tooltip-container .uv-icon-tooltip.bottom{transform:translate(-30%);margin:10px auto}.uv-icon .uv-tooltip-container .uv-icon-tooltip.top{bottom:100%}.uv-icon .uv-tooltip-container .uv-icon-tooltip.bottom{top:100%}.uv-icon .uv-tooltip-container .uv-icon-tooltip.left{right:100%}.uv-icon .uv-tooltip-container .uv-icon-tooltip.right{left:100%}.uv-icon .uv-tooltip-container:hover .uv-icon-tooltip{display:block}.uv-icon-trigger{display:block;width:39px;height:39px;border:none;padding:0;cursor:pointer;background:none}.uv-popover{font-family:sans-serif;font-weight:100;font-size:13px;color:black;position:fixed;z-index:100001}.uv-popover-content{border-radius:5px;background:white;border:1px solid transparent;position:relative;width:325px;height:325px;transition:background 200ms}.uv-bottom .uv-popover-content{box-shadow:rgba(0,0,0,0.3) 0 -10px 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-top .uv-popover-content{box-shadow:rgba(0,0,0,0.3) 0 10px 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-left .uv-popover-content{box-shadow:rgba(0,0,0,0.3) 10px 0 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-right .uv-popover-content{box-shadow:rgba(0,0,0,0.3) -10px 0 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-ie8 .uv-popover-content{position:relative}.uv-ie8 .uv-popover-content .uv-popover-content-shadow{display:block;background:black;content:'';position:absolute;left:-15px;top:-15px;width:100%;height:100%;filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=15,MakeShadow=true,ShadowOpacity=0.30);z-index:-1}.uv-popover-tail{border:9px solid transparent;width:0;z-index:10;position:absolute;transition:border-top-color 200ms}.uv-top .uv-popover-tail{bottom:-20px;border-top:11px solid white}.uv-bottom .uv-popover-tail{top:-20px;border-bottom:11px solid white}.uv-left .uv-popover-tail{right:-20px;border-left:11px solid white}.uv-right .uv-popover-tail{left:-20px;border-right:11px solid white}.uv-popover-loading{background:white;border-radius:5px;position:absolute;width:100%;height:100%;left:0;top:0}.uv-popover-loading-text{position:absolute;top:50%;margin-top:-0.5em;width:100%;text-align:center}.uv-popover-iframe-container{height:100%}.uv-popover-iframe{border-radius:5px;overflow:hidden}.uv-is-hidden{display:none}.uv-is-invisible{display:block !important;visibility:hidden !important}.uv-is-transitioning{display:block !important}.uv-no-transition{transition:none !important}.uv-fade{opacity:1;transition:opacity 200ms ease-out}.uv-fade.uv-is-hidden{opacity:0}.uv-scale-top,.uv-scale-top-left,.uv-scale-top-right,.uv-scale-bottom,.uv-scale-bottom-left,.uv-scale-bottom-right,.uv-scale-right,.uv-scale-right-top,.uv-scale-right-bottom,.uv-scale-left,.uv-scale-left-top,.uv-scale-left-bottom,.uv-slide-top,.uv-slide-bottom,.uv-slide-left,.uv-slide-right{opacity:1;transition:all 80ms ease-out}.uv-scale-top.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(-15%)}.uv-scale-top-left.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(-15%) translateX(-10%)}.uv-scale-top-right.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(-15%) translateX(10%)}.uv-scale-bottom.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(15%)}.uv-scale-bottom-left.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(15%) translateX(-10%)}.uv-scale-bottom-right.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(15%) translateX(10%)}.uv-scale-right.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(15%)}.uv-scale-right-top.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(15%) translateY(-10%)}.uv-scale-right-bottom.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(15%) translateY(10%)}.uv-scale-left.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(-15%)}.uv-scale-left-top.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(-15%) translateY(-10%)}.uv-scale-left-bottom.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(-15%) translateY(10%)}.uv-slide-top.uv-is-hidden{transform:translateY(-100%)}.uv-slide-bottom.uv-is-hidden{transform:translateY(100%)}.uv-slide-left.uv-is-hidden{transform:translateX(-100%)}.uv-slide-right.uv-is-hidden{transform:translateX(100%)}
+</style><script type="text/javascript" src="./Intro to Bootstrap_files/highlight-b633f6a6f8f33092c77cdeec43341175b82c93f333c1bf3d52ca8ccb5f62c727.js.download"></script><style></style><script type="text/javascript" src="./Intro to Bootstrap_files/zoom-a5d62a27f9dd7ce53da982c71e540b906097da17f6aadaf4d6532ff16c39d0c4.js.download"></script><style type="text/css">.hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}</style></head>
+  <body style="transition: -webkit-transform 0.8s ease 0s;">
+    
+    <div id="container" class="container">
+      <header class="global-header show-on-scroll">
+  <div class="wrapper">
+    <div class="slides-logo logo-image-or-text">
+      <a href="https://techtalentsouth.slides.com/">
+        <div class="logo-image" style="background-image: url(&#39;https://s3.amazonaws.com/media-p.slid.es/logos/299/Untitled_design__16_.png&#39;)"></div>
+      </a>
+    </div>
+    <div class="nav-wrapper">
+      <ul class="nav">
+
+          <li class="nav-item">
+            <a class="nav-item-anchor" href="https://techtalentsouth.slides.com/users/sign_in">
+              <span class="nav-item-label">Log in</span>
+            </a>
+          </li>
+
+      </ul>
+    </div>
+  </div>
+</header>
+
+      
+      <div id="main" class="main " role="main">
+        
+
+
+
+
+
+
+
+<div class="marquee">
+
+	<div class="reveal-frame">
+		<div class="reveal-viewport theme-font-opensans theme-color-silver-blue" style="--slide-width:960px; --slide-height:700px;">
+			<div class="reveal slide embedded has-horizontal-slides ready focused" role="application" data-transition-speed="default" data-background-transition="zoom">
+				<div class="slides" style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(0.506214);">
+					<section data-id="9185d81ce8aef19bc281de0ab86e9a2b" class="past" style="display: none;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 950.69px; left: 6.655px; top: 507.601px; height: auto;" data-block-id="57eb6260e1405d6d4e12e40421577809">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Intro to Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="image" data-name="image-64b11b" data-block-id="8556bfaa698f9162a9b047fe18c64823" style="width: 647.692px; height: 518px; left: 158.154px; top: 0px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img data-natural-width="1688" data-natural-height="1350" style="" data-lazy-loaded="" src="./Intro to Bootstrap_files/TTS-Identity-FullColor-HorizontalStack.png"></div></div>
+
+</section><section data-id="e9d042d3a68f446b46b53279672e9f41" class="past" style="display: none;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 950.395px; left: 4.8025px; top: 0px; height: auto;" data-block-id="9ba5e98ca36cc6da28c8fe3ad030255d">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Table of Contents</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-a7cbaa" data-block-id="8219935259674c391e63add12c3f6feb" style="height: auto; width: 954.197px; left: 5.803px; top: 140px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: center;">
+<ul>
+	<li>
+	<p>HTML Review</p>
+	</li>
+	<li>
+	<p>What is Bootstrap?</p>
+	</li>
+	<li>
+	<p>Bootstrap Features</p>
+	</li>
+	<li>
+	<p>Bootstrap Practice</p>
+	</li>
+	<li>
+	<p>Challenge 1</p>
+	</li>
+	<li>
+	<p>Challenge 2</p>
+	</li>
+</ul>
+</div></div>
+</section><section data-id="59c7da3f4d8088014df6ff826b64ed3f" class="past" style="display: none;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="ae4f45b5257f0a387986eda54374e142">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+
+<div class="sl-block" data-block-type="image" style="min-width: 1px; min-height: 1px; width: 368.813px; height: 260.382px; left: 295.594px; top: 219.809px;" data-block-id="d95ed94f72e273e81c87744904afc944" data-name="image-1be6a1"><div class="sl-block-content" style="z-index: 11;"><img data-natural-width="500" data-natural-height="353" style="" data-lazy-loaded="" src="./Intro to Bootstrap_files/bootstrap-html-css-31715884.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-3f5138" data-block-id="a2bf750a1ee1fbec0ef2a2187e5bf098" style="height: auto; width: 881.161px; left: 44.382px; top: 120.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><span style="color:rgb(0, 0, 0)">Bootstrap is a free web framework that can help you to quickly generate responsive website designs.</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-2805c8" data-block-id="aa385353f9e3066d2b17aedd0dc8d21e" style="height: auto; width: 937.12px; left: 13px; top: 490px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Before we look at using Bootstrap’s library of CSS and JavaScript classes and id’s, let's do a short review of basic HTML concepts we will need.</p>
+</div></div></section><section data-id="ea60b3fff862bd14edddb1611f4873e6" class="past" style="display: none;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="8980239fc971deea4f1530b12251ceb0">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-fbf461" style="height: auto; width: 960px; left: 0px; top: 182.154px;" data-block-id="6dce75380357d974941794995b5e85ee"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><strong>Review: HTML Page Layout<span>&nbsp;</span></strong></p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 748.552px; height: 271.672px; left: 105.724px; top: 240.064px;" data-block-id="87750862b38b2de3dcf17003c607ae7c" data-name="code-a29bfe"><div class="sl-block-content notranslate" style="z-index: 12;" data-highlight-theme="monokai-sublime"><pre class="xml" style="font-size: 18px; line-height: 22px;"><code class="hljs"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Divs and Spans<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"assets/stylesheets/styles.css"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>My Awesome Site<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>You'll find some really cool stuff here.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 86px;" data-block-id="57c0ab35a970d8ec3217ec1e4eb6d1e6" data-name="text-d7a6b5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<h3><strong>Review: HTML</strong></h3>
+</div></div></section><section data-id="1602ae26e3a06bb810b7c6d630fd0d70" class="past" style="display: none;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="2fa70d3627fee30570c0729151fcd537">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-fbf461" style="height: auto; width: 960px; left: 0px; top: 173px;" data-block-id="9fb12d8db8b4432801488cb85bd517b2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><strong>Div and Span</strong></p>
+
+<p>Divs and spans are HTML tags commonly used with CSS.</p>
+
+<ul>
+	<li>Divs are "block" elements and are used for large chunks of code</li>
+	<li>Spans are "inline" elements and are used for small bits of code<span>&nbsp;</span>
+</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 718px; height: 116px; left: 146.263px; top: 356.579px;" data-block-id="f0a69c11fc6756f13937f2bd87663124" data-name="code-4a7b0a"><div class="sl-block-content notranslate" style="z-index: 12; font-size: 130%;" data-highlight-theme="monokai-sublime"><pre class="xml"><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"content"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>My Awesome Site<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>You'll find some really cool stuff here.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="width: 588.526px; height: 102.526px; left: 200.895px; top: 487.474px;" data-block-id="a751f74a04150028f451f558a9c5eece" data-name="code-f349ca"><div class="sl-block-content notranslate" style="z-index: 13; font-size: 120%;" data-highlight-theme="monokai-sublime"><pre class="xml"><code class="hljs">#content {
+  width: 600px;
+  background: #fff;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 86px;" data-name="text-d7a6b5" data-block-id="f8e7e4b5085ef87f390e47feec33bb0d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<h3><strong>Review: HTML</strong></h3>
+</div></div></section><section data-id="6ed0bdddfcc5d1c08bd0e6ac67319094" class="past" style="display: none;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="5d41352c463f81fb81c2e210574212f3">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-fbf461" style="height: auto; width: 960px; left: 0px; top: 155px;" data-block-id="d78fa21206411499fc9ab2f75dda8a2d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><strong>Box Model</strong></p>
+
+<p><span>Each HTML element can be considered a box. The box model is essentially, you guessed it, a box that wraps around HTML elements!</span></p>
+
+<p><span><span>&nbsp;</span></span></p>
+
+<p><span>It consists of: margins, borders, padding, and the actual content.</span></p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 421px; height: 226.994px; left: 269.495px; top: 397.5px; min-width: 1px; min-height: 1px;" data-block-id="3f99ac334ac35e50b82faa520a68bd64" data-name="image-6eb6ff"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="536" data-natural-height="289" style="visibility: visible;" data-lazy-loaded="" src="./Intro to Bootstrap_files/box-model.gif"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 86px;" data-name="text-d7a6b5" data-block-id="ddbe359bcd8f03e8844c8c720005e029"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<h3><strong>Review: HTML</strong></h3>
+</div></div></section><section data-id="a1aea81e859f96831027ac796b1fa998" class="past" style="display: none;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="a719b44590836a8fa77e977b69723245">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-fbf461" data-block-id="3348d94467702f18659fcb0bbb1cd761" style="height: auto; width: 947.706px; left: 6.147px; top: 140px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><strong>What is Bootstrap?</strong></p>
+
+<p style="color:rgb(0, 0, 0)">Bootstrap is a free front-end framework for faster, easier web development. It includes HTML and CSS based design templates as well as JavaScript plugins.&nbsp;</p>
+
+<p style="color:rgb(0, 0, 0)">&nbsp;</p>
+
+<p style="color:rgb(0, 0, 0)"><strong>Included features</strong></p>
+
+<ul style="color:rgb(0, 0, 0)">
+	<li>HTML elements</li>
+	<li>CSS classes</li>
+	<li>JavaScript Plugins</li>
+	<li>Responsive designs</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 1px; min-height: 1px; width: 247.772px; height: 138.752px; left: 663.652px; top: 337.401px;" data-name="image-9b4e34" data-block-id="93bcd01a4de41f16ef33c529334966e6"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="500" data-natural-height="280" style="visibility: visible;" data-lazy-loaded="" src="./Intro to Bootstrap_files/pasted-from-clipboard.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 1px; min-height: 1px; width: 273.588px; height: 139.768px; left: 34.8348px; top: 336.385px;" data-name="image-5032f1" data-block-id="f1508e343ab5972056a01dc02f168ad3"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="644" data-natural-height="329" style="" data-lazy-loaded="" src="./Intro to Bootstrap_files/main-feature.png"></div></div></section><section data-id="eb2222cf9c44897d4158f80f84c6417f" class="past" style="display: none;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="cf930c8dcda9746465dfc9b3def5e78f">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-fbf461" style="height: auto; width: 960px; left: 0px; top: 102.105px;" data-block-id="eb722fc757fb58ec51a41b01203043b1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><strong>Where does Bootstrap come into play?</strong></p>
+
+<p>Designing UI and producing the necessary custom CSS and HTML can be time consuming. <strong>Bootstrap</strong>'s plug-and-play components and CSS styles allow developers to rapidly prototype applications without spending too much time on front-end concerns.&nbsp;</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 1px; min-height: 1px; width: 273px; height: 205.842px; left: 334.963px; top: 317.079px;" data-block-id="ce32a171112f98aa6068b2e89280e468" data-name="image-a085d5"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="500" data-natural-height="377" style="" data-lazy-loaded="" src="./Intro to Bootstrap_files/giphy__79_.gif"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-67a590" data-block-id="76b845a3a636f2bf67020b55e04e555a" style="height: auto; width: 727.076px; left: 116.462px; top: 552px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><span style="color:rgb(17, 17, 17)">Think of it like Legos, but instead of plastic we are using HTML, CSS, and JS code. </span></p>
+</div></div></section><section data-id="bf2a32e7f5ac7a9b55f5fef7c7e37156" class="past" style="display: none;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="d74c06e1aca0ff6444698581afcb00b1">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-fbf461" style="height: auto; width: 960px; left: 0px; top: 100.529px;" data-block-id="de4282e1dd92956463ad58317b019c1e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><strong>How to include Bootstrap on your site.</strong></p>
+
+<p><strong>Method 1: </strong>Download the latest version of bootstrap from <a href="http://getbootstrap.com/" target="_blank">getbootstrap.com</a>. Once downloaded you need to use npm to install&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Method 2: </strong>Use the Bootstrap CDNs to load the Bootstrap classes and necessary JavaScript as outlined in the <a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/" target="_blank">Bootstrap Quickstart Guide</a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-66111c" data-block-id="4beb03dfdf8ef89a95a72dc8cc081846" style="height: auto; width: 922.509px; left: 18.7455px; top: 560px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 90%;">
+<p><span style="color:rgb(17, 17, 17)">There are pros and cons to each approach, but we'll be using the second method in this course. </span></p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 307.432px; height: 171.619px; left: 326.284px; top: 373.691px; min-width: 1px; min-height: 1px;" data-name="image-09b316" data-block-id="f980c89a9f8b962943da759013fb91a6"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="498" data-natural-height="278" data-lazy-loaded="" src="./Intro to Bootstrap_files/giphy.gif"></div></div></section><section data-id="2b526eafabdd4479c94ef9d651977b12" class="past" style="display: none;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="291b89f90e45a9036bd93189623ab2fe">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-fbf461" style="height: auto; width: 960px; left: 0px; top: 163.154px;" data-block-id="03a4fd5f6e44cba535f703b01b04ad70"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>Bootstrap works almost entirely off of classes. We use premade CSS classes and they automatically style our pages to look fantastic!</p>
+
+<p>&nbsp;</p>
+
+<p>We can browse the prebuilt classes and components available at: <a href="http://getbootstrap.com/" target="_blank">getbootstrap.com</a>.&nbsp;</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 235.338px; height: 132.378px; left: 362.331px; top: 395.106px; min-width: 1px; min-height: 1px;" data-name="image-6850b1" data-block-id="2ce7cabbb5665cc8d176844a23594aa8"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="480" data-natural-height="270" data-lazy-loaded="" src="./Intro to Bootstrap_files/giphy(1).gif"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-e70495" data-block-id="f31726defc778a3c7bb43dd2d0b5e1ed" style="height: auto; width: 927.47px; left: 14.611px; top: 545.038px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><span style="color:rgb(17, 17, 17)">For most components in Bootstrap, we only need to copy and paste the code into our webpage! </span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-09f9da" data-block-id="88b3310d7c547a5b4ab3579a60903995" style="height: auto; width: 600px; left: 180px; top: 73px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<h3>How does it work?</h3>
+</div></div></section><section data-id="06ba218d2ea8eddd50b8ff25a5b7f9df" class="past" style="display: none;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 948.936px; left: 4.532px; top: 0px; height: auto;" data-block-id="3761cb8b0e56a7a53c2a9da7a41ec2d4">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-fbf461" style="height: auto; width: 954.468px; left: 2.766px; top: 140px;" data-block-id="c1d80c11e151d2b6598dbf7d6e644810"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>Bootstrap gets its responsive design by implementing a grid-based layout system.&nbsp;</p>
+
+<ul>
+	<li>The grid consists of 12 columns, evenly spaced</li>
+	<li>By defining how many columns you want each of your elements to take up (using Bootstrap classes), you can create a responsive layout.&nbsp;</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 693px; height: 242px; left: 133.5px; top: 363.693px; min-width: 1px; min-height: 1px;" data-block-id="5e8594dc0b6f08dbab89e267b81903aa" data-name="image-7b23ab"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="826" data-natural-height="289" data-lazy-loaded="" src="./Intro to Bootstrap_files/Screen_Shot_2016-12-14_at_12.54.14_PM.jpg"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-09f9da" style="height: auto; width: 600px; left: 180px; top: 74px;" data-block-id="b1d02b62d9107b9dd0d9f0f569901743"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<h3>How does it work?</h3>
+</div></div></section><section data-id="36c74dd51aceddaa338bad6f49e1055e" class="past" style="display: none;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="f20511679a4035d805a477d46da67539">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-fbf461" style="height: auto; width: 960px; left: 0px; top: 193px;" data-block-id="c6bb7aec90b4ca2826df08b9c16b334a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>Columns work within a row, and rows work within containers.</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 836px; height: 297px; left: 63px; top: 263px;" data-block-id="fe00050d9ccb968ec3b2172ecb698637" data-name="code-11c244"><div class="sl-block-content notranslate" style="z-index: 12; border-width: 1px; font-size: 90%;" data-highlight-theme="monokai-sublime"><pre class="xml"><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+      	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+        nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat.
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+      	Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+        culpa qui officia deserunt mollit anim id est laborum.
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-09f9da" style="height: auto; width: 600px; left: 180px; top: 73px;" data-block-id="f125064ef768290c4140b4d28a08f9e6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<h3>How does it work?</h3>
+</div></div></section><section data-id="0b022eda84798daaad01a4ea5d93f7d0" class="past" style="display: none;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 948.936px; left: 5.532px; top: 0px; height: auto;" data-block-id="f40982fc7dc853de2b4df95079743d9d">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-fbf461" style="height: auto; width: 955.468px; left: 4.532px; top: 140px;" data-block-id="4cfb7dca78c89016c0880b67dc3c0916"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>Cards are another useful Bootstrap component. They are flexible and extensible content containers that include options for headers, footers, and a wide variety of other content.<span>&nbsp;</span></p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 446.982px; height: 306.293px; left: 80px; top: 280px;" data-block-id="099f085910d295c4c78fb4a55dad903f" data-name="code-1831e2"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 12;" data-code-wrap="true"><pre class="xml"><code data-line-numbers="" class="hljs"><table class="hljs-ln"><tbody><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="1"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 18rem;"</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="2"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-img-top"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="3"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body"</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="4"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">    <span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-title"</span>&gt;</span>Card title<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="5"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-text"</span>&gt;</span>Some quick example text to build on the card title and make up the bulk of the card's content.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="6"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>Go somewhere<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="7"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="8"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></div></td></tr></tbody></table></code></pre></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 1px; min-height: 1px; width: 244.097px; height: 323.646px; left: 597.952px; top: 271.323px;" data-block-id="8d522ab127eebfc6f61340148785a8ec" data-name="image-b0448f"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="448" data-natural-height="594" style="" data-lazy-loaded="" src="./Intro to Bootstrap_files/Annotation_2019-10-06_121307.jpg"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-09f9da" style="height: auto; width: 600px; left: 180px; top: 74px;" data-block-id="179cf4d383fb3f41bdbafbe5071edf5e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<h3>How does it work?</h3>
+</div></div></section><section data-id="69d403059e54c313d5782963ebe80967" class="past" style="display: none;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="52e3d86e27c2c463abe69e94abbaa8c4">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-fbf461" style="height: auto; width: 951.514px; left: 4.243px; top: 186.884px;" data-block-id="bc36fe1832959b8a98df40d2d6d788ae">
+<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<p>Button classes can be added to any HTML element, but are primarily added to <em>button</em>&nbsp;and <em>anchor</em>&nbsp;elements.</p>
+
+<p>Here's some of the types of Bootstrap buttons!</p>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 11;" class="_1KJtL"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 659.764px; height: 140px; left: 150.118px; top: 326.884px;" data-block-id="8fbb9fac7f354b66c55f9a7e2e874f8c" data-name="code-88afbd"><div class="sl-block-content notranslate" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 12;"><pre class="xml"><code data-line-numbers="" class="hljs"><table class="hljs-ln"><tbody><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="1"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="2"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="3"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="4"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="5"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-danger"</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="6"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-link"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></div></td></tr></tbody></table></code></pre></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 1px; min-height: 1px; width: 537px; height: 57px; left: 211.5px; top: 479.884px;" data-block-id="34519c94a774f40a811fe61d4ddeec53" data-name="image-ca3443"><div class="sl-block-content" style="z-index: 13; border-style: solid; border-width: 2px;"><img data-natural-width="537" data-natural-height="57" style="" data-lazy-loaded="" src="./Intro to Bootstrap_files/Capture2.PNG"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-09f9da" style="height: auto; width: 600px; left: 180px; top: 73px;" data-block-id="dbcdaa1cb5256d3b7af31a75f6b8e100"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<h3>How does it work?</h3>
+</div></div></section><section data-id="a2ff9c6ece54228f2a634f21fecc7d68" class="past" style="display: none;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="be0b34479c44fda023bbcf59ea4ee503">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-fbf461" style="height: auto; width: 960px; left: 0px; top: 97.5px;" data-block-id="5adab9eae3d2936fc096679c247a2607"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><strong>Making Our Own Website</strong></p>
+
+<p>Create a folder called good_coffee.</p>
+
+<p>Once this is created, open the folder up in your IDE.</p>
+
+<p>&nbsp;</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 1px; min-height: 1px; width: 597px; height: 328px; left: 181.5px; top: 266px;" data-block-id="41721ad3153a81b2290c7a329fe51661" data-name="image-be6e77"><div class="sl-block-content" style="z-index: 14;"><img style="visibility: visible;" data-natural-width="610" data-natural-height="335" data-lazy-loaded="" src="./Intro to Bootstrap_files/pasted-from-clipboard(1).png"></div></div></section><section data-id="74e9a040a93d77885ce8ddd87b7e84af" class="past" style="display: none;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="fdaed1f5d221b33c980820c39fd53742">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-fbf461" style="height: auto; width: 960px; left: 0px; top: 140px;" data-block-id="861c14f8c9f843d2a7644739de61afd7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>In <em>good_coffee</em>, let's create a file called <em>index.html</em>.</p>
+
+<p>&nbsp;</p>
+
+<p>Inside this file, set up a basic HTML website.<span style="display:none">&nbsp;</span></p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 580.316px; height: 213.263px; left: 189.842px; top: 313.369px;" data-block-id="90cbcfd41c43bdcc06f1e36f7ff0c4b2" data-name="code-d055e3"><div class="sl-block-content notranslate has-copy-button" data-highlight-theme="monokai-sublime" data-code-frame="none" style="z-index: 14;"><pre class="xml"><code data-line-numbers="" class="hljs"><table class="hljs-ln"><tbody><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="1"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="2"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="3"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">	<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="4"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">		<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="5"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">		<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Strapping Good Cofffee<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="6"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">	<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="7"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">	<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="8"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">		</div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="9"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">	<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="10"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></div></td></tr></tbody></table></code></pre></div></div></section><section data-id="3149d506dbe1f112818669133a9413d3" class="past" style="display: block;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="291d9c2b312c8cfe54cb084b41342a6a">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-fbf461" style="height: auto; width: 960px; left: 0px; top: 93px;" data-block-id="999beed13391a164cf8e383783c91ac8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>Time to include our Bootstrap files!</p>
+
+<p>This means the files we're referencing for the sheet are pulled from the web. The lastest cdn is located <a href="http://getbootstrap.com/getting-started/#download-cdn" target="_blank">here</a>:</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 880px; top: 561.421px;" data-name="text-5bd065" data-block-id="7bbbd41a4fffa4dc133463a11faf7d2f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><span style="font-size:1.0em"><span style="color:#FFFFFF">col-1</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 960px; height: 348.424px; left: 0px; top: 219px;" data-block-id="9fb5d36584ba355072007aff88883558" data-name="code-45339c"><div class="sl-block-content notranslate has-copy-button" style="z-index: 13;" data-highlight-theme="monokai-sublime" data-code-wrap="true"><pre class="xml"><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Required meta tags and Bootstrap CSS --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1, shrink-to-fit=no"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://code.jquery.com/jquery-3.5.1.slim.min.js"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 693px; left: 133.5px; top: 574.652px;" data-block-id="21c5d7420c851a60afd20663fb087b01" data-name="text-30b4af"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 90%;">
+<p>You'll also want to pull in the <a href="https://popper.js.org/" target="_blank">Popper</a>&nbsp;cdn and <a href="https://code.jquery.com/" target="_blank">jQuery </a>cdn. The links are also included on the Bootstrap site.</p>
+</div></div></section><section data-id="9a8c87481e8f0d134e032dc9a2de89ea" class="past" style="display: block;" hidden="" aria-hidden="true"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="012a678a79a6377207b14a9cfad631ea">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 880px; top: 561.421px;" data-name="text-5bd065" data-block-id="462580166439431b6662f1e472788f30"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:1.0em"><span style="color:#FFFFFF">col-1</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 952px; left: 0px; top: 84.3683px;" data-block-id="9abe630124f8c2710747ea79390b15f1" data-name="text-855f6e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: center;">
+<p>We can go to <a href="https://getbootstrap.com/docs/4.3/components/navbar/" target="_blank">https://getbootstrap.com/docs/4.3/components/navbar/</a>&nbsp; and get a navbar.</p>
+
+<p>&nbsp;</p>
+
+<p>We're gonna paste this right in our body. Above the js CDN.</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 883.339px; height: 295.158px; left: 49.892px; top: 305.263px;" data-block-id="4a3804d6dbcd860570ba1eeb26222ac3" data-name="code-8fdffb"><div class="sl-block-content notranslate has-copy-button" style="z-index: 13;" data-highlight-theme="monokai-sublime" data-code-wrap="true"><pre class="xml"><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar navbar-expand-lg navbar-light bg-light"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-brand"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Navbar<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-toggler"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"collapse"</span> <span class="hljs-attr">data-target</span>=<span class="hljs-string">"#navbarSupportedContent"</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"navbarSupportedContent"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Toggle navigation"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-toggler-icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collapse navbar-collapse"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"navbarSupportedContent"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar-nav mr-auto"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item active"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Home <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only"</span>&gt;</span>(current)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item dropdown"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link dropdown-toggle"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"navbarDropdown"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"dropdown"</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">aria-expanded</span>=<span class="hljs-string">"false"</span>&gt;</span>
+          Dropdown
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"navbarDropdown"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link disabled"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span> <span class="hljs-attr">aria-disabled</span>=<span class="hljs-string">"true"</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-inline my-2 my-lg-0"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control mr-sm-2"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"search"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Search"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Search"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-outline-success my-2 my-sm-0"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>&gt;</span>Search<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></code></pre><button class="copy-code-to-clipboard" data-code-to-copy="&lt;nav class=&quot;navbar navbar-expand-lg navbar-light bg-light&quot;&gt;
+  &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;
+  &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarSupportedContent&quot; aria-controls=&quot;navbarSupportedContent&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+    &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+
+  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarSupportedContent&quot;&gt;
+    &lt;ul class=&quot;navbar-nav mr-auto&quot;&gt;
+      &lt;li class=&quot;nav-item active&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Home &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item dropdown&quot;&gt;
+        &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;navbarDropdown&quot; role=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+          Dropdown
+        &lt;/a&gt;
+        &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDropdown&quot;&gt;
+          &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;
+          &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;
+          &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+          &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;form class=&quot;form-inline my-2 my-lg-0&quot;&gt;
+      &lt;input class=&quot;form-control mr-sm-2&quot; type=&quot;search&quot; placeholder=&quot;Search&quot; aria-label=&quot;Search&quot;&gt;
+      &lt;button class=&quot;btn btn-outline-success my-2 my-sm-0&quot; type=&quot;submit&quot;&gt;Search&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;">Copy</button></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-a04977" data-block-id="e37e3678ed8bf0142001c651ac1bdd50" style="height: auto; width: 600px; left: 176px; top: 600.421px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 80%;">
+<p><em>scroll to view full code</em></p>
+</div></div></section><section data-id="931a82075114dcbc691cc273deabb9ca" class="present" style="display: block;"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="5cb2cd177109acef9750084cd897b982">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 880px; top: 561.421px;" data-name="text-5bd065" data-block-id="efe5eb352018369cc0b1f88c93e31bcf"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:1.0em"><span style="color:#FFFFFF">col-1</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 952px; left: 0px; top: 162.684px;" data-name="text-855f6e" data-block-id="d18caa8fff8e01b57baaf8d404a43fa5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: center;">
+<p>Open index.html in Chrome and take a look at that sweet navbar!</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 540px; left: 210px; top: 249.947px;" data-block-id="8e49677412da2f1415afa8bdde23afc7" data-name="text-9a0da1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-has-custom-html=""><img data-lazy-loaded="" src="./Intro to Bootstrap_files/giphy(2).gif"></div></div></section><section data-id="7aa479856f97bf45a845135d3c4fc5e9" hidden="" aria-hidden="true" class="future" style="display: block;"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="0d63de885fcacb947d6bd6c1bdcaeed0">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 880px; top: 561.421px;" data-name="text-5bd065" data-block-id="65d8b6128e9c05801e7b09b708cf3c49"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:1.0em"><span style="color:#FFFFFF">col-1</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 952px; left: 0px; top: 106.158px;" data-name="text-855f6e" data-block-id="3ccd46d37ebf126e057bc0386b0c8851"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: center;">
+<p><strong>Navbar</strong></p>
+
+<p>Here's a few features that you can change in your Bootstrap <strong>navbar</strong>!</p>
+
+<ul>
+	<li>Brand (usually a link to home/index page)</li>
+	<li>Dropdowns*</li>
+	<li>Active Class (denotes which page you're currently on)</li>
+	<li>Inline Form (we would need RoR or JS to power)</li>
+	<li>Placeholder (text within input fields)</li>
+	<li>Remove anything that's unwanted</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 540px; left: 210px; top: 228.789px;" data-name="text-9a0da1" data-block-id="09c14469fa68933fcb19f6f93af0ef31"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-has-custom-html=""></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 490px;" data-block-id="7c9a857aacafff727fb78b6a31f458f7" data-name="text-f52309"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 80%;" data-gramm_id="dcd02078-1fcd-1fed-6afd-56d3299ec26b" data-gramm="true" data-gramm_editor="true">
+<p>* if Dropdowns are not working, check to make sure jQuery and Bootstrap JS CDN links are written properly</p>
+</div></div></section><section data-id="a937831834f7f63761382999d63b217a" hidden="" aria-hidden="true" class="future" style="display: block;"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="b0eb4aa2d0425f4eadcf0f1ab7618a8e">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 880px; top: 561.421px;" data-name="text-5bd065" data-block-id="a258f3f6fba6414684142d1d0ad40415"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:1.0em"><span style="color:#FFFFFF">col-1</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 952px; left: 0px; top: 106.158px;" data-name="text-855f6e" data-block-id="54e9ad9e31907c46fd4b98215bd3b239"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: center;">
+<p>Let's add a banner!</p>
+
+<p>Bootstrap has a pre-made banner called a <strong>jumbotron</strong>! You can find it's code here: <span style="color:rgb(17, 17, 17)">&nbsp;</span><a href="https://getbootstrap.com/docs/4.3/components/jumbotron/" target="_blank">https://getbootstrap.com/docs/4.3/components/jumbotron/</a></p>
+
+<p>&nbsp;</p>
+
+<p>Go ahead and change the code a little to look like this. </p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 540px; left: 210px; top: 323.158px;" data-name="text-9a0da1" data-block-id="77ba8de56fc3657651c3a91678ca7ce8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-has-custom-html=""></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 730px; height: 83px; left: 121.615px; top: 359.574px;" data-block-id="c98ab93b3c88798c80c5ebf363dc3a3c" data-name="code-9f8471"><div class="sl-block-content notranslate" style="z-index: 14;" data-highlight-theme="monokai-sublime"><pre class="xml"><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"jumbotron-fluid text-center"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"animated fadeInDown"</span>&gt;</span> Good Coffee Co.<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-50ef94" data-block-id="77e0172166f03ffc473c96bd25c09da2" style="height: auto; width: 882.234px; left: 37.766px; top: 521px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 90%;">
+<p><span style="color:rgb(17, 17, 17)">You might notice we added a few classes to the </span><strong>h1</strong><em>. </em></p>
+
+<p><span style="color:rgb(17, 17, 17)">We'll get into further detail about those later!</span></p>
+</div></div></section><section data-id="3ace6a58b5941745a445f486618db7eb" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="fe3722f6fd1392129e8d884fa0d5594d">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 880px; top: 561.421px;" data-name="text-5bd065" data-block-id="86010bf6f9f32db7682a648fa2676844"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:1.0em"><span style="color:#FFFFFF">col-1</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 952px; left: 0px; top: 106.158px;" data-name="text-855f6e" data-block-id="3f69a7ebdeffea0225fcf53d0d90a24b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: center;">
+<p>Everything is looking good so far! The coffee is really great, and people can't get enough. Let's give them a <strong>button</strong>&nbsp;to click to make an order.</p>
+
+<p>Add this in the <strong>jumbotron</strong> under the <strong>h1</strong>.</p>
+
+<p>&nbsp;</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 540px; left: 210px; top: 276.158px;" data-name="text-9a0da1" data-block-id="ae17779d45d90d25ea2a9bc63da654e6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-has-custom-html=""></div></div>
+<div class="sl-block" data-block-type="code" style="width: 699px; height: 106px; left: 130.5px; top: 277.158px;" data-block-id="005e4b2262fd5cd7bebb13cf6079ea27" data-name="code-1fa3f3"><div class="sl-block-content notranslate" style="z-index: 14;" data-highlight-theme="monokai-sublime"><pre class="xml"><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"order-button text-center"</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>Order Coffee Today!<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div></div></section><section data-id="fd177ab470a443010257fe1d75e7f73d" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="416bfd6aadae135c129c0b548780fd9d">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 880px; top: 561.421px;" data-name="text-5bd065" data-block-id="41b528c331bdb7a3aa29729168e16d8a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:1.0em"><span style="color:#FFFFFF">col-1</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 952px; left: 0px; top: 106.158px;" data-name="text-855f6e" data-block-id="8bb46b4d71703c0e7a3af7bcf3995e29"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: center;">
+<p>As all good coffee shops should, let's have a mission statement. We will use a boostrap class called <strong>.container </strong>with another class called <strong>.row </strong>to create a good looking mission statement.</p>
+
+<p>&nbsp;</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 540px; left: 210px; top: 268.158px;" data-name="text-9a0da1" data-block-id="ddf59e6924dee0f0e8f764d8e797e81c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-has-custom-html=""></div></div>
+<div class="sl-block" data-block-type="code" style="width: 848px; height: 150px; left: 56px; top: 257.193px;" data-block-id="66aee3f08c06bb67bd625e791e2b7b3f" data-name="code-027811"><div class="sl-block-content notranslate" style="z-index: 14;" data-highlight-theme="monokai-sublime"><pre class="xml"><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container-fluid mission"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span> Here at Good Coffee Co we are passionate about serving the best coffee you'll ever taste.
+    <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span> Our staff are self-described coffee-nerds with impeccable technique.
+    <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span> Stop by today and experience the Good Coffee difference. <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span> 
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div></div></section><section data-id="65d8a0434008abd8c6a909f2201032ad" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="4f4bba56e8965ba4dd8697b4aa21a012">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 880px; top: 561.421px;" data-name="text-5bd065" data-block-id="2450176a8133955f793cc38ad601acb6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:1.0em"><span style="color:#FFFFFF">col-1</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 952px; left: 0px; top: 106.158px;" data-name="text-855f6e" data-block-id="78003014ad272fedda22fe44f3766b4c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: center;">
+<p>Bootstrap has some <a href="http://getbootstrap.com/docs/4.3/content/images/" target="_blank">great classes</a> for your images!</p>
+
+<p><strong>"img-fluid" </strong>makes your images change size relative to the browser size.</p>
+
+<p>Let's add some features of our coffee shop with images.<span>&nbsp;</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 540px; left: 210px; top: 237.158px;" data-name="text-9a0da1" data-block-id="593b74aa5e7f50268a615934107722c2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-has-custom-html=""></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 946px; height: 332.998px; left: 14px; top: 247.923px;" data-block-id="ef4e02778954e4878739d7e4c11ae045" data-name="code-e9b8ba"><div class="sl-block-content notranslate" style="z-index: 14;" data-highlight-theme="monokai-sublime" data-code-wrap="true"><pre class="xml"><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container features"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-12 col-sm-4"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://upload.wikimedia.org/wikipedia/commons/3/3f/Coffee_Beans.jpg"</span>&gt;</span>
+    	    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span> The freshest locally sourced coffee. Organic and Fair Trade certified<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>	
+    	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-12 col-sm-4"</span>&gt;</span>
+    	    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://upload.wikimedia.org/wikipedia/commons/3/3f/Coffee_Beans.jpg"</span>&gt;</span>
+    	    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span> A perfect environment to meet with a friend or be alone and get work done.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-xs-12 col-sm-4"</span>&gt;</span>
+    	    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-fluid"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://upload.wikimedia.org/wikipedia/commons/3/3f/Coffee_Beans.jpg"</span>&gt;</span>
+    	    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span> Quality hand-crafted espresso shots pulled with the greatest of care.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-a04977" style="height: auto; width: 600px; left: 187px; top: 592.152px;" data-block-id="a283b78a973383cb00b2d71d6ba92bcf"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 80%;">
+<p><em>scroll to view full code</em></p>
+</div></div></section><section data-id="67f72cd9c25086c84269974bf7bfe166" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="3017ce240e139cc1b039e64bcdf11bc5">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 880px; top: 561.421px;" data-name="text-5bd065" data-block-id="ed47dc6a8aee23f2fb7d4506577b2730"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:1.0em"><span style="color:#FFFFFF">col-1</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 952px; left: 0px; top: 106.158px;" data-name="text-855f6e" data-block-id="327f5f688139b58950af9bf93331a83b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: center;">
+<p>Time for some <a href="https://getbootstrap.com/docs/4.3/utilities/embed/" target="_blank">embedded video</a>!</p>
+
+<p>Find a video on YouTube (preferably coffee related) and add it to the first column panel. Here's an example!<span>&nbsp;</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 540px; left: 210px; top: 229.158px;" data-name="text-9a0da1" data-block-id="050ec0228660a6fda640758f7e4607b8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-has-custom-html=""></div></div>
+<div class="sl-block" data-block-type="code" style="width: 677.579px; height: 118.158px; left: 160px; top: 250.842px;" data-block-id="45e21435df4dce3d41bbec31352dcfed" data-name="code-e68b92"><div class="sl-block-content notranslate" style="z-index: 14; font-size: 110%;" data-highlight-theme="monokai-sublime" data-code-wrap="true"><pre class="xml"><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-fluid embed-responsive-16by9"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://www.youtube.com/embed/ZfW-TU7RSXo"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"embed-responsive-item"</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div></div></section><section data-id="ed2db84f0173f56089c11ee27cfb4f8c" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="58f29293fffcdbd6083d164797c2514c">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 880px; top: 561.421px;" data-name="text-5bd065" data-block-id="a74c0750c3eba4596a676376106cdc32"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:1.0em"><span style="color:#FFFFFF">col-1</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 952px; left: 0px; top: 106.158px;" data-name="text-855f6e" data-block-id="400b2bc683c3db2badb05c0148dfb1e9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: center;">
+<p>The website is looking good! All we need now is a footer! Bootstrap doesn't have a default footer class, so let's use what we've learned so far to make something custom that looks right!</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 540px; left: 210px; top: 223.158px;" data-name="text-9a0da1" data-block-id="2080f5a5839a9f0deffb0dde1e8c2624"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-has-custom-html=""></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 579px; height: 298px; left: 190.5px; top: 237.316px;" data-block-id="5f9347e00020ad6d539159b06852545b" data-name="code-b0d11d"><div class="sl-block-content notranslate" style="z-index: 14;" data-highlight-theme="monokai-sublime"><pre class="xml"><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container-fluid"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span>© Good Coffee Co. 2014 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav nav-pills"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Contact Us <span class="hljs-symbol">&amp;#124;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Get Support <span class="hljs-symbol">&amp;#124;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Privacy Policy<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-right"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Follow Us<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span></code></pre></div></div></section><section data-id="f9ef5a017582b51fecb6d16f95662998" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="530722b9ea14ff044ecba3f1997d5889">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 880px; top: 561.421px;" data-name="text-5bd065" data-block-id="73b55ea4b111b51f54b41444744572de"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:1.0em"><span style="color:#FFFFFF">col-1</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 952px; left: 0px; top: 106.158px;" data-name="text-855f6e" data-block-id="ec16bc213482543ee2ed95e9a45fc323"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: center;">
+<p>That footer might look a little wonky...</p>
+
+<p>Let's add some custom css to make it (and some other parts of the website) look better!</p>
+
+<ol>
+	<li>Create a new file called <em>main.css</em>
+</li>
+	<li>Inside of <em>main.css</em>, add some custom css code:<span>&nbsp;</span>
+</li>
+</ol>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 540px; left: 210px; top: 323.158px;" data-name="text-9a0da1" data-block-id="6742382100cd9a2b2cecfd37d8ea731c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-has-custom-html=""></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 907px; height: 210.963px; left: 45px; top: 350.458px;" data-block-id="9549d555221a94fcdaa743c926999338" data-name="code-878a26"><div class="sl-block-content notranslate" style="z-index: 14;" data-code-wrap="true" data-highlight-theme="monokai-sublime"><pre><code class="hljs css"><span class="hljs-selector-tag">body</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#A2DED0</span>;
+}
+
+
+<span class="hljs-selector-class">.jumbotron</span> {
+	<span class="hljs-attribute">background-image</span>:<span class="hljs-built_in">url</span>(<span class="hljs-string">'http://upload.wikimedia.org/wikipedia/commons/6/62/Drip_Coffee_Bangkok.jpg'</span>); 
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">20%</span>;
+	<span class="hljs-attribute">background-repeat</span>: no-repeat;
+	<span class="hljs-attribute">background-size</span>: cover;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">40px</span>;
+	<span class="hljs-attribute">background-attachment</span>: fixed;
+	<span class="hljs-attribute">background-position</span>:  center -<span class="hljs-number">238px</span>;
+	
+
+}
+
+<span class="hljs-selector-class">.jumbotron</span> <span class="hljs-selector-tag">h1</span> {
+	<span class="hljs-attribute">position</span>: absolute;
+	<span class="hljs-attribute">top</span>:<span class="hljs-number">18</span>;
+	<span class="hljs-attribute">left</span>:<span class="hljs-number">0</span>;
+	<span class="hljs-attribute">padding-left</span>: <span class="hljs-number">20px</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#F7FAFE</span>;
+}
+
+<span class="hljs-selector-class">.mission</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#323232</span>;
+	<span class="hljs-attribute">color</span>: <span class="hljs-number">#F7FAFE</span>;
+	<span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">30px</span>;
+	
+}
+
+<span class="hljs-selector-class">.mission</span> <span class="hljs-selector-tag">h3</span> {
+	<span class="hljs-attribute">font-family</span>:<span class="hljs-string">'Raleway'</span> <span class="hljs-string">'sans-serif'</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">5%</span> <span class="hljs-number">10%</span> ;
+	<span class="hljs-attribute">text-align</span>: center;
+	<span class="hljs-attribute">position</span>: center;
+
+}
+
+<span class="hljs-selector-class">.order-button</span> {
+  <span class="hljs-attribute">margin</span>: auto;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">25%</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+}
+
+
+<span class="hljs-selector-class">.features</span> {
+	<span class="hljs-attribute">padding</span>: <span class="hljs-number">5%</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-selector-class">.features</span> <span class="hljs-selector-tag">p</span> {
+	<span class="hljs-attribute">font-family</span>: <span class="hljs-string">'Muli'</span> <span class="hljs-string">'sans-serif'</span>;
+	<span class="hljs-attribute">text-align</span>: center;
+	<span class="hljs-attribute">color</span>:<span class="hljs-number">#323232</span>;
+	<span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.2em</span>;
+	<span class="hljs-attribute">padding-top</span>: <span class="hljs-number">10px</span>;
+}
+
+
+<span class="hljs-selector-tag">footer</span> {
+	<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#D64541</span>;
+	<span class="hljs-attribute">position</span>: absolute;
+	<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+	<span class="hljs-attribute">height</span>: auto;
+}
+
+<span class="hljs-selector-tag">footer</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> {
+	<span class="hljs-attribute">display</span>: inline-block;
+	<span class="hljs-attribute">list-style</span>: none;
+	<span class="hljs-attribute">float</span>: right;
+	
+}
+
+<span class="hljs-selector-tag">footer</span> <span class="hljs-selector-tag">p</span> {
+	<span class="hljs-attribute">float</span>: left;
+}
+
+<span class="hljs-selector-tag">footer</span> <span class="hljs-selector-tag">a</span>,
+<span class="hljs-selector-tag">footer</span> <span class="hljs-selector-tag">p</span> {
+
+	<span class="hljs-attribute">color</span>:<span class="hljs-number">#fff</span>;
+	<span class="hljs-attribute">vertical-align</span>: middle;
+
+
+}
+
+
+<span class="hljs-comment">/********************
+MEDIA QUERIES
+********************/</span>
+<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width:</span> <span class="hljs-number">776px</span>) {
+	<span class="hljs-selector-class">.features</span> <span class="hljs-selector-tag">img</span> {
+		<span class="hljs-attribute">max-width</span>: <span class="hljs-number">90%</span>;
+		<span class="hljs-attribute">margin</span>: auto;
+	}
+</code></pre></div></div>
+
+</section><section data-id="037236452c45bd1f8950318647d10f6c" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="fb86ad39025e07e9cadd85cc13a77003">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 880px; top: 561.421px;" data-name="text-5bd065" data-block-id="d49bbe4cb0340247a25e08ce19aa0509"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:1.0em"><span style="color:#FFFFFF">col-1</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 952px; left: 0px; top: 106.158px;" data-name="text-855f6e" data-block-id="1948be33ce348caabb9fcd2a9d9a2c2e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: center;">
+<p><em>We can also override Bootstrap styles!</em><br>
+Use the Inspector tool to determine the class you’d like to override.<br>
+&nbsp; &nbsp;</p>
+
+<p>Write styles that take priority over Bootstrap’s styles.<br>
+&nbsp; &nbsp;</p>
+
+<p>Let’s say we want to change the color of the headers inside the “jumbotron”.</p>
+
+<p>&nbsp;</p>
+
+<p>To change this style we can define it in our own stylesheet.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 540px; left: 210px; top: 486.158px;" data-name="text-9a0da1" data-block-id="f4ddc1b5d22cebb04ca9feabdc25bb95"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-has-custom-html=""></div></div>
+<div class="sl-block" data-block-type="code" style="width: 854.076px; height: 69.542px; left: 52.962px; top: 526.65px;" data-name="code-878a26" data-block-id="70b4488120b9e115fdfbe84b4ddeb309"><div class="sl-block-content notranslate" style="z-index: 14;" data-code-wrap="true" data-highlight-theme="monokai-sublime"><pre><code class="hljs css"><span class="hljs-selector-class">.jumbotron</span> <span class="hljs-selector-tag">h1</span> {
+    <span class="hljs-attribute">color</span>: orange;
+}</code></pre></div></div>
+
+</section><section data-id="23856864774ca4eaf794cfcdadf945bd" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="6c1437bbcfa84c2e41371adcfc64c7b1">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 880px; top: 561.421px;" data-name="text-5bd065" data-block-id="df71be9ee873a448034f7630e0d46dde"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:1.0em"><span style="color:#FFFFFF">col-1</span></span></p>
+</div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 540px; left: 210px; top: 253.158px;" data-name="text-9a0da1" data-block-id="fb4eb2127e309263f354f144c3fc2617"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-has-custom-html=""></div></div>
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 825px; left: 67.5px; top: 100.579px;" data-name="text-d46a1f" data-block-id="aa5f629d3b31c0a3873c85bdd357c594"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Don't forget to link to your new CSS!!&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>3. Put this code in your head tag, BELOW the Bootstrap cdn:&nbsp;</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 570px; height: 30px; left: 195px; top: 250px;" data-name="code-3294a4" data-block-id="a6d99bf8a9e8805f66791aaab4f7814f"><div class="sl-block-content notranslate" style="z-index: 14;" data-highlight-theme="monokai-sublime"><pre class="xml"><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/css"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"main.css"</span>&gt;</span></code></pre></div></div>
+<div class="sl-block" data-block-type="image" style="width: 508.254px; height: 286.205px; left: 225.873px; top: 314.091px; min-width: 1px; min-height: 1px;" data-name="image-d15057" data-block-id="e1e82585ca54b72d16fa7969b659ce99"><div class="sl-block-content" style="z-index: 15;"><img style="left: 0px; top: 0px; width: 508px; height: 286px;" data-natural-width="480" data-natural-height="270" data-crop-x="-0.00025" data-crop-y="-0.000797" data-crop-width="1.000499" data-crop-height="1.001594" data-lazy-loaded="" data-src="https://media2.giphy.com/media/cLqTqyigA8b5gl23Dw/giphy.gif"></div></div></section><section data-id="67c20df64f424ad4b79c7d43d9190879" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="c2bdc1bad95e26fa1deb25fa7849e589">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 880px; top: 561.421px;" data-name="text-5bd065" data-block-id="996397838056d74ea8c0f7686a98789c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:1.0em"><span style="color:#FFFFFF">col-1</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 952px; left: 0px; top: 106.158px;" data-name="text-855f6e" data-block-id="c3c439bed61e05d18d000e7abbd42427"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: center;">
+<p style="color:rgb(17, 17, 17)">So now everything looks great! Let's add a little animation to show some fine detail. We'll do this using another framework called Animate.css. Learn how it works, <a href="https://daneden.github.io/animate.css/" target="_blank">here</a>&nbsp;and <a href="https://github.com/daneden/animate.css" target="_blank">here</a>.&nbsp;</p>
+
+<p style="color:rgb(17, 17, 17)">We can use another CDN:</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 540px; left: 210px; top: 268.158px;" data-name="text-9a0da1" data-block-id="43442a6ccb7fa019aa9d98530eee7866"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-has-custom-html=""></div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 53.105px; left: 0px; top: 293px;" data-block-id="b4ce0df1acfa759cb8ace6f3d109d4cf" data-name="code-d7cbcc"><div class="sl-block-content notranslate" style="z-index: 14;" data-highlight-theme="monokai-sublime" data-code-wrap="true"><pre class="xml"><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"</span>&gt;</span></code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 960px; left: 0px; top: 363.316px;" data-block-id="8cdd8a482879acdfad471c9cac011bc0" data-name="text-ba8cc8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<p>Remember those extra classes in our H1? Those were animate.css classes.</p>
+
+<p>Refresh the page and see if it worked!</p>
+</div></div></section><section data-id="ef3faf4fc61ac96ec47bba6e81516d63" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="58baa57f66f675f45b1940ea9b5d14a3">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 880px; top: 561.421px;" data-name="text-5bd065" data-block-id="8930d0f748c8ae93c915c496ef4c8c40"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:1.0em"><span style="color:#FFFFFF">col-1</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 952px; left: 0px; top: 106.158px;" data-name="text-855f6e" data-block-id="4bba4c94ea8f8ef565d215d9a5fc6006"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: center;">
+<p style="color:rgb(17, 17, 17)"><strong>Challenge 1</strong></p>
+
+<ol>
+	<li style="color:rgb(17, 17, 17)">Create a new file called <em>about_the_roaster.html</em>
+</li>
+	<li style="color:rgb(17, 17, 17)">Add a link to it in the nav bar</li>
+	<li style="color:rgb(17, 17, 17)">Use different bootstrap components to customize the "about_the_roaster" page</li>
+	<li style="color:rgb(17, 17, 17)">Make sure that the user can always navigate back to the home page (index.html)</li>
+</ol>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 540px; left: 210px; top: 393.158px;" data-name="text-9a0da1" data-block-id="17c282173c033ea6f6be1fde1eabc261"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-has-custom-html=""></div></div></section><section data-id="761f179fa5c7d7567d022fc598d71108" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="5755b92ef39c3204089e50994d8db024">
+<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h2>Bootstrap</h2>
+</div>
+<grammarly-extension style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="_1KJtL"></grammarly-extension>
+</div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 880px; top: 561.421px;" data-name="text-5bd065" data-block-id="38ae6caeb6ffce136446320aad8014fd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:1.0em"><span style="color:#FFFFFF">col-1</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 952px; left: 0px; top: 106.158px;" data-name="text-855f6e" data-block-id="1b69eb9ce35b5afb9540acbbe6930d33"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: center;">
+<p style="color:rgb(17, 17, 17)"><strong>Challenge 2</strong></p>
+
+<ol>
+	<li style="color:rgb(17, 17, 17)">Create a new file called <em>order_coffee.html</em>
+</li>
+	<li style="color:rgb(17, 17, 17)">Add a link to it via the button</li>
+	<li style="color:rgb(17, 17, 17)">Use different bootstrap components to customize the "order_coffee" page - try creating a Bootstrap form!</li>
+	<li style="color:rgb(17, 17, 17)">Make sure that the user can always navigate back to the home page (<em>index.html</em>)</li>
+</ol>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 540px; left: 210px; top: 393.158px;" data-name="text-9a0da1" data-block-id="b790911e97568f706f43333c4d57eeb3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-has-custom-html=""></div></div></section>
+				</div>
+					<div id="theme-html-output"></div>
+			<div class="backgrounds"><div class="slide-background past" data-loaded="true" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background past" data-loaded="true" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background past" data-loaded="true" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: block;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: block;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background present" style="display: block;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: block;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: block;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div></div><div class="slide-number" style="display: block;"><a href="https://techtalentsouth.slides.com/techtalentsouth/intro-to-bootstrap-dcd5e3?token=vobD-dO7#/18">
+					<span class="slide-number-a">19</span>
+					</a></div><aside class="controls" data-controls-layout="bottom-right" data-controls-back-arrows="faded" style="display: block;"><button class="navigate-left enabled" aria-label="previous slide"><div class="controls-arrow"></div></button>
+			<button class="navigate-right enabled" aria-label="next slide"><div class="controls-arrow"></div></button>
+			<button class="navigate-up" aria-label="above slide" disabled="disabled"><div class="controls-arrow"></div></button>
+			<button class="navigate-down" aria-label="below slide" disabled="disabled"><div class="controls-arrow"></div></button></aside><div class="progress" style="display: block;"><span style="transform: scaleX(0.580645);"></span></div><div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div><div class="pause-overlay"><button class="resume-button">Resume presentation</button></div><div class="aria-status" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">Bootstrap col-1 Open index.html in Chrome and take a look at that sweet navbar! </div></div>
+		</div>
+	</div>
+
+	<div class="pill summary-pill" style="left: 517.5px;">
+		<div class="pill-picture" style="background-image: url(https://www.gravatar.com/avatar/a07888b07a6d01e963042f43ba2d46a5?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></div>
+		<div class="pill-content">
+			<h4 class="pill-title">Intro to Bootstrap</h4>
+			<p class="pill-description">By Tech Talent South</p>
+		</div>
+	</div>
+
+	<div class="pill instructions-pill" style="left: 463.5px;">
+		<div class="pill-picture"></div>
+		<div class="pill-content">
+			<h4 class="pill-title">Navigation instructions</h4>
+			<p class="pill-description">Press the space key or click the arrows to the right</p>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="column">
+	<header class="deck-card ">
+		<div class="deck-card-header">
+				<div class="deck-state" data-tooltip="This deck is only visible to people it has been explicitly shared it with" data-tooltip-maxwidth="250">Private</div>
+
+			<div class="deck-options">
+				<a class="button white fullscreen-button" data-tooltip="Fullscreen" href="https://techtalentsouth.slides.com/techtalentsouth/intro-to-bootstrap-dcd5e3/fullscreen"><span class="icon i-fullscreen"></span></a>
+			</div>
+
+		</div>
+
+
+		<div class="clear"></div>
+
+		<div class="deck-card-body">
+			<div class="deck-info">
+				<h1 class="title">Intro to Bootstrap</h1>
+				<ul class="deck-meta">
+					<li data-tooltip="Created date" data-tooltip-delay="500">
+						<span class="icon i-clock"></span>
+						<time class="value ago" datetime="2020-10-08 19:28:23 UTC">2 months ago</time>
+					</li>
+				</ul>
+			</div>
+
+			<div class="user-info">
+	<div class="picture" style="background-image: url(https://www.gravatar.com/avatar/a07888b07a6d01e963042f43ba2d46a5?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></div>
+	<div class="text">
+		<h3 class="title">
+			<a href="https://techtalentsouth.slides.com/techtalentsouth" class="username">Tech Talent South</a>
+		</h3>
+		<p class="description">Tech Talent South (TTS) is an approachable and inclusive technical education company which exists to build and connect local tech and entrepreneurial ecosystems. We offer experiences for individuals, corporations, and talent pipeline partners. </p>
+		<ul class="links">
+			
+			 <li><a href="https://twitter.com/techtalentsouth" target="_blank"><span class="icon i-twitter"></span>techtalentsouth</a></li> 
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>
+
+			<div class="clear"></div>
+		</div>
+	</header>
+
+
+
+</div>
+      </div>
+      <footer class="global-footer global-footer-minimal">
+  <div class="legal">
+    <a href="http://help.slides.com/">Help &amp; Support</a>
+    • <a href="https://techtalentsouth.slides.com/terms?root=true">Terms</a>
+    • <a href="https://techtalentsouth.slides.com/privacy?root=true">Privacy</a>
+    • <span class="copyright">© 2020 Slides, Inc.</span>
+   </div>
+</footer>
+
+    </div> <!--! end of #container -->
+    
+<script>
+	var SLConfig = {"team":{"id":299,"name":"Tech Talent South","slug":"techtalentsouth","logo":"https://s3.amazonaws.com/media-p.slid.es/logos/299/Untitled_design__16_.png","default_theme_id":1458,"user_count":11,"allow_scripts":false,"themes":[{"id":2251,"created_at":"2019-07-22T13:10:13.134Z","updated_at":"2019-07-22T14:58:25.859Z","name":"TTS Large","thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/243b041f144a8ab4ca39ff3af30cb27e/thumb.jpg?1563807503","sanitize_messages":null,"slide_template_ids":[],"font_typekit":"","font_google":"","width":1440,"height":900},{"id":1853,"created_at":"2018-06-09T00:36:22.757Z","updated_at":"2018-06-09T01:18:32.427Z","name":"Levvel","thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/ef87fb673a38dd8da678205742063ab8/thumb.jpg?1528507109","sanitize_messages":null,"slide_template_ids":[],"font_typekit":"","font_google":"","width":960,"height":700},{"id":1458,"created_at":"2017-03-26T13:46:57.108Z","updated_at":"2019-06-12T19:29:17.263Z","name":"TTS Default Theme","thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/852544233f873bcb8773881d196c7a6c/thumb.jpg?1560367755","sanitize_messages":null,"slide_template_ids":[],"font_typekit":"","font_google":"Lato","width":960,"height":700},{"id":1447,"created_at":"2017-03-13T00:03:40.135Z","updated_at":"2018-04-10T15:56:56.447Z","name":"Loyola","thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/56c630deb6992e60252a34d556a5bbb7/thumb.jpg?1523375814","sanitize_messages":null,"slide_template_ids":[],"font_typekit":"","font_google":"","width":960,"height":700},{"id":541,"created_at":"2015-04-15T18:49:54.356Z","updated_at":"2015-05-05T00:42:29.115Z","name":"Zach-TTS","thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/secure/d3c007/themes.jpg","sanitize_messages":null,"slide_template_ids":[],"font_typekit":null,"font_google":null,"width":960,"height":700},{"id":410,"created_at":"2015-01-25T21:08:11.722Z","updated_at":"2015-04-01T18:28:09.367Z","name":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/secure/8275da/themes.jpg","sanitize_messages":null,"slide_template_ids":[],"font_typekit":null,"font_google":null,"width":960,"height":700},{"id":393,"created_at":"2015-01-12T17:23:52.794Z","updated_at":"2017-02-24T14:28:36.984Z","name":"Lesson-Theme","thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/6d87e076819b0ccdf38a166e436a95f7/thumb.jpg","sanitize_messages":null,"slide_template_ids":[],"font_typekit":"","font_google":"","width":960,"height":700}],"beta_new_editor":true,"manually_upgraded":false,"allow_public_decks":false,"google_domain":""},"deck":{"id":1942642,"slug":"intro-to-bootstrap-dcd5e3","title":"Intro to Bootstrap","description":"","width":960,"height":700,"margin":0.05,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/792922619164c554f9e96ea6e616ffa7/thumb.jpg?1605886652","view_count":405,"user":{"id":264630,"username":"techtalentsouth","name":"Tech Talent South","description":"Tech Talent South (TTS) is an approachable and inclusive technical education company which exists to build and connect local tech and entrepreneurial ecosystems. We offer experiences for individuals, corporations, and talent pipeline partners. ","thumbnail_url":"https://www.gravatar.com/avatar/a07888b07a6d01e963042f43ba2d46a5?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"enterprise","team_id":299,"settings":{"id":84945,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null},"membership":{"role":"owner","manager":true,"activated":true}},"background_transition":"zoom","transition":"slide","theme_id":1458,"theme_font":"opensans","theme_color":"silver-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":32,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":null,"data_updated_at":1606096319410,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true},"theme":{"id":1458,"created_at":"2017-03-26T13:46:57.108Z","updated_at":"2019-06-12T19:29:17.263Z","name":"TTS Default Theme","thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/852544233f873bcb8773881d196c7a6c/thumb.jpg?1560367755","sanitize_messages":null,"slide_template_ids":[],"font_typekit":"","font_google":"Lato","width":960,"height":700},"user":{"id":264630,"username":"techtalentsouth","name":"Tech Talent South","description":"Tech Talent South (TTS) is an approachable and inclusive technical education company which exists to build and connect local tech and entrepreneurial ecosystems. We offer experiences for individuals, corporations, and talent pipeline partners. ","thumbnail_url":"https://www.gravatar.com/avatar/a07888b07a6d01e963042f43ba2d46a5?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"enterprise","team_id":299,"settings":{"id":84945,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null},"membership":{"role":"owner","manager":true,"activated":true}}};
+</script>
+    <script src="./Intro to Bootstrap_files/application-bc729969cf71994fc316d6cdd1bdbbabe635cadfdffbeb4c194a6f19d309fb19.js.download" defer="defer"></script>
+    	<script src="./Intro to Bootstrap_files/deck-4800db274d9da6e32e8a5d9260ddd66a13dce0bbec2de9a14b8d2b26116af9dc.js.download" defer="defer"></script>
+	
+
+
+    <script>
+UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/f7sH7NavrjjvuGxByaw.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+
+UserVoice.push(['set', {
+  accent_color: '#448dd6',
+  trigger_color: 'white',
+  trigger_background_color: 'rgba(46, 49, 51, 0.6)',
+  position: 'automatic'
+}]);
+
+</script>
+
+  
+
+</body></html>

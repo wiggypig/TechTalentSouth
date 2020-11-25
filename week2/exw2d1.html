@@ -5,22 +5,37 @@
   	</head>
 	<body>
   		<script>
-              let customerTotal, customerAmount, tax;  // declare variable
+              /* let customerTotal, customerAmount, tax;  // declare variable
               console.log(customerTotal)
               customerAmount = 25.00;
               tax = 7.50;
               customerTotal= customerAmount + tax;
 
               console.log("Your purchases are: $" , customerAmount);
-              //console.log(customerAmount);
-              
+              //console.log(customerAmount);              
               console.log("Your tax is: $", tax);
-              console.log("Your total is: $", customerTotal);
+              console.log("Your total is: $", customerTotal); */
               /* 
               customerTotal = 1024; // variable assignment
               y = 5;
               console.log(customerTotal);
               console.log(y); */
+              let state;
+              let salesTax;
+              let customerAmount = 25.00;
+
+              state = "LA";
+              if (state == "VA") {
+                  salesTax = .035;
+              }else {
+                  salesTax = .093;
+              }
+
+
+
+              console.log("Your tax on your purchase of $", customerAmount);
+              console.log("Your tax for this purchase is $", customerAmount * salesTax);
+              console.log("Your total amount is $", (customerAmount*salesTax)+customerAmount)
         </script>
         <p>This web page is working.</p>
   	</body>
