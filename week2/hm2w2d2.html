@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../week2/assets/stylesheets/standard.css" type="text/css">
+    <link rel="stylesheet" href="../week2/assets/stylesheets/normalize.css" type="text/css">
+    <meta charset="utf-8"> <!-- //include in the head -->
+    <title> Coffee and Oil Challange </title>
+</head>
+<body>
+    <script>
+        let maxCupNumber = 3; // max number of cups of coffee for now
+        let cupNumber = 1;  //number of cups of coffee had
+        let initialMessage = "Do You Need More Coffee? ";   // initial message
+        let rst4More = "Yes, I'll take another cup of coffee.";     // message for more coffee
+        let rstNoMore = "I think I'm okay for now.";    //message for no more
+
+        console.log(initialMessage);
+                // Conditional to handle coffee request choice
+        if (cupNumber < maxCupNumber) {
+                console.log(rst4More);   
+        }
+        else {
+                console.log(rstNoMore);
+        }
+
+        let oilChange1 = "Does Your car need an oil change? "   // Initial message
+        let Indicator4Change = 500; // Change at this many miles
+        let carMiles = 450; // Current Car Miles
+        let responsePositive = "Yes, I think I need an oil change."     // Yes response
+        let responseNegative = "My car doesn't need an oil change yet." // Negative response
+
+        //Conditional to handle oil change
+        console.log(oilChange1);
+                // Conditional to handle coffee request choice
+        if (carMiles < Indicator4Change) {
+                console.log(responsePositive);   
+        }
+        else {
+                console.log(responseNegative);
+        }
+    </script>
+    <p> Do You Need More Coffee? </p>
+    <p> Does Your Car Need An Oil Change? </p>
+    
+</body>
+</html>

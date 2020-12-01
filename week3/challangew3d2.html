@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../week2/assets/stylesheets/standard.css" type="text/css">
+    <link rel="stylesheet" href="../week2/assets/stylesheets/normalize.css" type="text/css">
+    <meta charset="utf-8">     
+    <title>JavaScript Challenge</title>
+</head>
+<body>
+    <script>
+        let billAmount = Math.floor(Math.random() * 101); /* // returns a random integer from 0 to 100  */
+        let gratPhrase =  "Your total including gratuity is: ";
+        function gratuity(tip) {
+            let sum = 0;
+            let giftRate = 0.2;
+            sum = tip * giftRate;
+            return sum;
+        }
+        function totalWithGrat(ourAmt) {
+            let sum = 0;
+            let giftAmount = 0;
+            giftAmount = gratuity(ourAmt);
+            sum = ourAmt + giftAmount
+            return sum;
+        }
+        console.log("the bill is: ", billAmount);
+        console.log(gratPhrase, totalWithGrat(billAmount).toFixed(2));
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Object Practice</title>
+  </head>
+
+  <body>
+    <script>
+        let course = {
+	name: 'JavaScript Applications',
+	awesome: true,
+	teachers: ['Assaf', 'Shane'],
+	students: [
+		{
+			name: 'Steve',
+			computer: {
+				OS: 'Linux',
+				type: 'laptop'
+			}
+		},
+		{
+			name: 'Katy',
+			computer: {
+				OS: 'OSX',
+				type: 'macbook'
+			}
+		},
+		{
+			name: 'Chuck',
+			computer: {
+				OS: 'OSX',
+				type: 'macbook'
+			}
+		}
+
+	],
+	preReqs : {
+		skills : ['html', 'css', 'git'],
+		equipment: {
+			laptop: true,
+			OSOptions: ['linux', 'osx']
+		}
+	}
+};
+let limit = course.length;
+let tempHolder;
+// copy the course array into osxStudents
+let osxStudents = course;
+console.log(course.name);   //couse name
+console.log(course.teachers[1]);   // 2nd teacher names
+console.log(course.students[0].name);    // mane of the first student
+console.log(course.students[1].computer.type);    // Kathy's computer type
+/* tempHolder = course.preReqs.equipment.toString(); */
+console.log(course.preReqs.equipment.toString());    //The preReq equipment object
+console.log(course.preReqs.equipment.OSOptions[1]);     // Print the second OSOption from equipment prereqs
+// String listing the OSOptions separated by 'or' ('linux or osx')
+console.log("The OS Options are: " + course.preReqs.equipment.OSOptions.toString());
+
+
+// Remove students that are using osx
+/* for (let i = 0; i < osxStudents.students.length; i++){
+	console.log(i, course.students.computer.OS[i]);
+	// If the OS is OSX copy to the new array	
+    If (osxStudents.students.computer.OS[i] !== 'OSX') {
+        osxStudents.students.splice(i, 1);        
+    }
+    console.log(course.students.computer.OS[i]);
+} */
+
+
+      
+      
+      for (let x=0; x<=limit; x++) {
+        /* if (x % 2 == false) {
+                console.log(x + " is even");   
+        }
+        else {
+                console.log(x + " is odd");
+        } */
+        console.log(course.students[x].OS);
+        }
+
+      
+    </script>
+
+    <p>Show Me Even and Odd Numbers</p>
+  </body>
+</html>
+

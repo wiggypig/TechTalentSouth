@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+  <head>
+    <title>For Loop with Arrays</title>
+  </head>
+
+  <body>
+    <script>
+   /*    let fruits = ["Apple", "Banana", "Mango"];
+      // get the size of the array - number of items
+      let sizeOfArray = fruits.length;
+
+      fruits[1] = "Papaya";
+      console.log(" The length of the array is ", sizeOfArray);
+
+      fruits.push("Orange");
+      sizeOfArray = fruits.length;
+      // For loop to traverse array
+      for (let i = 0; i < sizeOfArray; i++) {
+        fruits[i] = fruits[i] + "s";
+        console.log(fruits[i]); */
+
+        /*         if (x % 2 == false) {
+                console.log(x + " is even");   
+        }
+        else {
+                console.log(x + " is odd");
+        }
+
+      } */
+
+      /* let tempFruit = fruits.pop();
+      console.log(tempFruit); */
+      /* 1. set up an array
+      2. place 1 in that array
+      3. keep doing this 30 time:
+      souble the value in teh last element in the array and aadd that value to the array
+      4. output the last value in the array */
+      let month = 31;   // days of a month
+      let suluArray = [1];
+      let dailyAmt = suluArray[0];
+      var text = "";
+      var i = 0;
+      console.log("the starting amount is ", dailyAmt);
+
+      for (i=1; i < month; i++) {
+        /* dailyAmt = suluArray[i]; */
+        dailyAmt = dailyAmt * 2;
+        suluArray.push(dailyAmt);
+        console.log(suluArray[i-1]);
+       /*    console.log(suluArray[i]);
+        If (dailyAmt > 100000)
+       {
+            console.log("This is day ", i+1);
+            console.log("The amount is ", dailyAmt);
+       }
+            
+        else {
+            
+        console.log("Today is day ", i + " You only have ", dailyAmt);
+
+      } */
+    }
+    /* Pretty print the contents of the array */
+    console.log(suluArray.toString());
+    i = 0;
+    /* Use this while loop to find the number of days to which we have more than $1000
+    look for amount greater than $1000 and end before length of array. */
+      while (suluArray[i] < 100000 && i <= suluArray.length - 1) {
+        i++;  // increment counter
+        text += "<br>The number is " + i;
+        
+      } 
+      console.log("You will have $1000 in ", i + 1, " days.");
+
+
+   
+
+
+    </script>
+
+    <p>Show Me this page works.</p>
+  </body>
+</html>
