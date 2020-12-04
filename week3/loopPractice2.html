@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../week3/assets/stylesheets/standard.css" type="text/css">
+    <link rel="stylesheet" href="../week3/assets/stylesheets/normalize.css" type="text/css">
+    
+         
+    <title></title>
+    
+</head>
+
+<body>
+    <script>
+        let course = {
+	name: 'JavaScript Applications',
+	awesome: true,
+	teachers: ['Assaf', 'Shane'],
+	students: [
+		{
+			name: 'Steve',
+			computer: {
+				OS: 'Linux',
+				type: 'laptop'
+			}
+		},
+		{
+			name: 'Katy',
+			computer: {
+				OS: 'OSX',
+				type: 'macbook'
+			}
+		},
+		{
+			name: 'Chuck',
+			computer: {
+				OS: 'OSX',
+				type: 'macbook'
+			}
+		}
+
+	],
+	preReqs : {
+		skills : ['html', 'css', 'git'],
+		equipment: {
+			laptop: true,
+			OSOptions: ['linux', 'osx']
+		}
+	}
+};
+let limit = course.length;
+let tempHolder;
+// copy the course array into osxStudents
+let osxStudents = course;
+        console.log("name of the course:" + course.name); //string
+        console.log("name of the course:" + typeof(course.name)); //string
+        console.log("name of the second teacher:" + course.teachers[1]); // string
+        console.log("name of the second teacher:" + typeof(course.teachers[1])); // string
+        console.log("name of first student:" + course.students[0].name);    // string
+        console.log("name of first student:" + typeof(course.students[0].name));    // string
+        console.log("Katy's computer type:" + course.students[1].computer.type);    // string
+        console.log("Katy's computer type:" + typeof(course.students[1].computer.type));    // string
+        console.log("the preReq equipment:" + course.preReqs.equipment); // object having issues with this!
+        console.log("the preReq equipment:" + typeof(course.preReqs.equipment)); // object having issues with this!
+        console.log("the preReq equipment contents:" + course.preReqs.equipment.toString()); // object having issues with this!
+        console.log("the second OSOption from equipment prereqs:" + course.preReqs.equipment.OSOptions[1]); // string
+        console.log("the second OSOption from equipment prereqs:" + typeof(course.preReqs.equipment.OSOptions[1])); // string
+        console.log("string listing the OSOptions seperated by 'or':" + course.preReqs.equipment.OSOptions[0] + "||" + course.preReqs.equipment.OSOptions[1]); // string
+        console.log("string listing the OSOptions seperated by 'or':" + typeof(course.preReqs.equipment.OSOptions[0]) + "||" + typeof(course.preReqs.equipment.OSOptions[1])); // string
+        console.log("an array of all the students that are using osx:" + course.students[1].name + " " + "and" + " " + course.students[2].name);    // object
+        console.log("an array of all the students that are using osx:" + typeof(course.students[1].name) + " " + "and" + " " + typeof(course.students[2].name));    // object
+        console.log("prereqs skills:" + course.preReqs.skills[0] + " " + course.preReqs.skills[1] + " " + course.preReqs.skills[2]);
+        console.log(course)
+
+
+    </script>
+
+  
+    <script src="./assets/javascripts/classStuff.js"></script>
+</body>
+</html>
