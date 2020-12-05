@@ -52,6 +52,7 @@ let limit = course.length;
 let tempHolder;
 // copy the course array into osxStudents
 let osxStudents = course;
+
         console.log("name of the course:" + course.name); //string
         console.log("name of the course:" + typeof(course.name)); //string
         console.log("name of the second teacher:" + course.teachers[1]); // string
@@ -70,7 +71,9 @@ let osxStudents = course;
         console.log("an array of all the students that are using osx:" + course.students[1].name + " " + "and" + " " + course.students[2].name);    // object
         console.log("an array of all the students that are using osx:" + typeof(course.students[1].name) + " " + "and" + " " + typeof(course.students[2].name));    // object
         console.log("prereqs skills:" + course.preReqs.skills[0] + " " + course.preReqs.skills[1] + " " + course.preReqs.skills[2]);
-        console.log(course)
+		console.log(course);
+		console.log(course.preReqs)
+		console.log(course.preReqs.equipment)
 
 
     </script>

@@ -1,5 +1,5 @@
 
-// Info from Homeworkw3d4.html
+/* // Info from Homeworkw3d4.html
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
@@ -55,17 +55,17 @@ function newElement() {
     }
   }
 }
-
+ */
 // slide 12 sledgehammer approach to get or set html text
 //Get all inputs
-/* let div = document.querySelector('div');
+let div = document.querySelector('div');
 let a = document.querySelector('a');
 
 console.log(a.innerHTML); //"click me"
 console.log(div.innerHTML); //'<a href="#">Click me</a>'
 
 a.innerHTML = "Updated link text";
- */
+
 
 
 // Select items of the DOM
