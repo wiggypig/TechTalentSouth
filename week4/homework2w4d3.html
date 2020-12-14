@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/stylesheets/standard.css" type="text/css">
+    <link rel="stylesheet" href="../assets/stylesheets/normalize.css" type="text/css">
+    <!-- <script type = "text/typescript" src="homework2w4d3.js"></script> -->
+    <title>Week4Day3 Homework 2</title>
+</head>
+<body>
+    <h1>Day 3 Assignment 2</h1>
+    <p id="summary"> US Cities Honolulu, Memphis, & Charlotte 
+        <div>
+            <p id="results" onclick="printAllCities()"> Click me to see the longitude of each city.</p>
+        </div>
+    </p>
+
+    <script>
+        /* This assignment is to test fetch of remote data using async/await */
+
+        async function printAllCities() {
+            for (const city of [ 'Honolulu', 'memphis', 'charlotte' ]) {
+            await printLatitudeAndLongitude(city);
+            }
+        }
+
+        async function printLatitudeAndLongitude(city) {
+            const url = `https://geocode.xyz/${city}?json=1`;
+        
+        let res = await fetch(url);
+        
+        if (res.status != 200) {
+            res = await new Promise(x => setTimeout(async () => {
+                const tmpRes = await fetch(url);
+                x(tmpRes);
+            }, 2000));
+        }
+
+            const json = await res.json();
+            const output = `${json.standard.city} - Latitude: ${json.latt}, Longitude: ${json.longt}`;
+            console.log(output);
+            htmlLog(output);
+        }
+
+        function htmlLog(logData) {
+            const li = document.createElement('li');
+        li.innerText = logData.toString();
+            document.getElementById('results').appendChild(li);
+        }
+
+    </script>
+    
+    
+
+</body>
+</html>
